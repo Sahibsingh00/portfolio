@@ -17,7 +17,7 @@ return (
 
         </div>
             
-            <a href="/democv.pdf" target="_blank" rel="noopener noreferrer" className='animation active '>
+            <a href="/SahibResume-portfolio.pdf" target="_blank" rel="noopener noreferrer" className='animation active '>
                 Download My CV
             </a>
         </div>
