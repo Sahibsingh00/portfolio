@@ -1,17 +1,21 @@
 import React, { useState, useRef } from 'react' 
 import CustomHook from './CustomHook';
+import TextAnimator from './TextAnimator';
 
 function Contacts() {
 const [listContacts] = useState([
+  
   {
-    title: 'Phone Number',
-    value: '+84123XXX'
-  },{
     title: 'Email',
-    value: 'hohoang.dev@gmail.com'
-  },{
-    title: 'Instagram',
-    value: '@lundev.web'
+    value: 'singh0sahib@gmail.com'  // Update with your actual email address
+  },
+  {
+    title: 'LinkedIn',
+    value: 'https://www.linkedin.com/in/sahib-0-singh'  // Update with your LinkedIn profile URL
+  },
+  {
+    title: 'GitHub',
+    value: 'https://github.com/Sahibsingh00'  // Update with your GitHub profile URL
   }
 ])
 const divs = useRef([]);
@@ -25,14 +29,14 @@ CustomHook(scrollTab, divs);
        </div>
        <div className="des" ref={(el) => el && divs.current.push(el)}>
         {/* 20 */}
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam perspiciatis quae veniam amet nesciunt voluptatibus quis consectetur consequatur quisquam harum.
+        Feel free to reach out to me through the following channels. I’m open to discussing job opportunities, collaborations, or any questions you might have about my work , I’m here to connect and help!
        </div>
        <div className="list"  ref={(el) => el && divs.current.push(el)}>
         {
           listContacts.map((value, key) => (
             <div className='item' key={key}>
               <h3>{value.title}</h3>
-              <div>{value.value}</div>
+              <div><TextAnimator text={value.value} animationType="matrix" /></div>
             </div>
           ))
         }

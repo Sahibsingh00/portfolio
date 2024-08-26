@@ -6,25 +6,25 @@ import CustomHook from './CustomHook';
 function Projects() {
 const [listProjects] = useState([
   {
-    name: 'Project Real-time chating in website',
-    des: 'Eu voluptate sit do labore consectetur in ad esse qui laborum ad eiusmod. Esse ea velit culpa exercitation anim enim reprehenderit. Fugiat nostrud non dolore aliquip quis in ea amet duis.',
-    mission: 'Back-end Developer, system analysis and design',
-    language: 'HTML5, CSS3, React JS, SockerIO,...',
-    images: '/project1.PNG'
+    name: "E-commerce Platform Development",
+      des: "Developed a dynamic e-commerce platform with features like user authentication, product management, and a secure payment gateway. Integrated RESTful APIs for real-time data exchange and optimized the platform for performance and scalability.",
+      mission : "Front-end Developer, UI/UX Design, API Integration",
+      language : "HTML5, CSS3, ReactJS, Node.js, Express, MongoDB",
+    images: '/bagly-2.jpg'
   },
   {
-    name: 'Project Real-time chating in website',
-    des: 'Eu voluptate sit do labore consectetur in ad esse qui laborum ad eiusmod. Esse ea velit culpa exercitation anim enim reprehenderit. Fugiat nostrud non dolore aliquip quis in ea amet duis.',
-    mission: 'Back-end Developer, system analysis and design',
-    language: 'HTML5, CSS3, React JS, SockerIO,...',
-    images: '/project2.PNG'
+    name: "Dynamic Blogging System",
+      des: "Created a dynamic and responsive blogging system with features like post creation, editing, and comments. Integrated a rich text editor for an enhanced writing experience and ensured SEO optimization.",
+      mission: "Full-Stack Developer, System Architecture Design",
+      language: "HTML5, CSS3, Angular, Firebase, Node.js",
+    images: '/blog-2.jpg'
   },
   {
-    name: 'Project Real-time chating in website',
-    des: 'Eu voluptate sit do labore consectetur in ad esse qui laborum ad eiusmod. Esse ea velit culpa exercitation anim enim reprehenderit. Fugiat nostrud non dolore aliquip quis in ea amet duis.',
-    mission: 'Back-end Developer, system analysis and design',
-    language: 'HTML5, CSS3, React JS, SockerIO,...',
-    images: '/project2.PNG'
+    name: "AI-Powered Chatbot",
+      des: "Developed an AI-powered chatbot for customer support on an e-commerce platform. The chatbot utilizes natural language processing (NLP) to provide accurate and context-aware responses to user queries.",
+      mission: "AI/ML Integration, System Analysis, Backend Development",
+      language: "Python, TensorFlow, ReactJS, Socket.IO, Node.js",
+    images: '/ai.jpg'
   },
 
 ]);
@@ -38,7 +38,7 @@ CustomHook(scrollTab, divs);
        </div>
        <div className="des" ref={(el) => el && divs.current.push(el)}>
         {/* 20 */}
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam perspiciatis quae veniam amet nesciunt voluptatibus quis consectetur consequatur quisquam harum.
+        A collection of innovative projects including an e-commerce platform, a dynamic blogging system, and an AI-powered chatbot.
        </div>
        <div className="list">
         {

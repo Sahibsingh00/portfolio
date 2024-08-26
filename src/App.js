@@ -6,10 +6,12 @@ import Projects from './components/Projects'
 import Contacts from './components/Contacts'
 
 
+
 function App() {
 
   return (
     <main>
+
       <NavBar />
       <Home />
       <Skills />
@@ -18,5 +20,6 @@ function App() {
     </main>
   );
 }
+
 
 export default App;

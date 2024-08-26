@@ -1,7 +1,9 @@
 import React, { useRef, useState } from 'react' 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faReact, faHtml5, faCss3, faJs, faVuejs, faLaravel } from '@fortawesome/free-brands-svg-icons';
+import { faReact, faHtml5, faCss3, faJs, faAngular,faGithub  } from '@fortawesome/free-brands-svg-icons';
 import CustomHook from './CustomHook';
+
+
 
 function Skills() {
   const divs = useRef([]);
@@ -9,34 +11,39 @@ function Skills() {
   CustomHook(scrollTab, divs);
 const [listSkills] = useState([
   {
+    name: 'Angular',
+    des: 'Proficient in Angular for building large-scale, enterprise-level applications with TypeScript and RxJS.',
+    icon: faAngular
+  },
+  {
+    name: 'ReactJS',
+    des: 'Expert in developing scalable and high-performance web applications using ReactJS and its ecosystem, including hooks and state management.',
+    icon: faReact
+  },
+  {
+    name: 'GitHub',
+    des: 'Proficient in using GitHub for version control, collaboration, and project management.',
+    icon: faGithub,
+  },
+  {
     name: 'HTML',
-    des: 'Eu voluptate sit do labore consectetur in ad esse qui laborum ad eiusmod. Esse ea velit culpa exercitation anim enim reprehenderit. Fugiat nostrud non dolore aliquip quis in ea amet duis.',
+    des: 'Proficient in creating well-structured, semantic HTML5 code for building robust and accessible web applications.',
     icon: faHtml5
   },
   {
     name: 'CSS',
-    des: 'Ad ad in cillum ut labore irure aliqua. Ex sit dolore ipsum id duis nostrud veniam. Nisi duis ut veniam ut eiusmod occaecat ullamco ullamco. Consequat eu sunt ut elit dolor sint magna magna velit ex. Excepteur occaecat reprehenderit tempor veniam.',
+    des: 'Skilled in crafting responsive designs using CSS3, including advanced techniques like flexbox, grid, and animations with SCSS.',
     icon: faCss3
   },
   {
-    name: 'Javascript',
-    des: 'Sunt nostrud nulla qui cillum mollit aute anim anim aliqua aute magna tempor. Do culpa culpa excepteur officia ut eu deserunt proident sint non ut do magna minim. Sunt et excepteur tempor culpa irure non exercitation. Amet nostrud ex aute incididunt incididunt ipsum.',
-    icon: faJs},
-  {
-    name: 'ReactJs',
-    des: 'Voluptate qui adipisicing dolore pariatur laboris deserunt consectetur reprehenderit. Esse dolor elit ullamco duis quis aliquip fugiat ipsum nisi est et. Nisi ut deserunt excepteur irure aliquip proident ',
-    icon: faReact
+    name: 'JavaScript',
+    des: 'Experienced in modern JavaScript (ES6+) for building dynamic and interactive web applications.',
+    icon: faJs
   },
-  {
-    name: 'VueJs',
-    des: 'Laborum commodo reprehenderit anim sunt est. Aliquip ipsum nisi incididunt enim ex id et sit sint magna. Deserunt minim ullamco aute veniam. Do irure nulla ut quis.',
-    icon: faVuejs
-  },
-  {
-    name: 'Laravel',
-    des: 'Ullamco incididunt adipisicing laboris ullamco ipsum quis nulla non. Non et irure amet in sint duis Lorem est eiusmod nisi. Aute dolor eiusmod esse et cupidatat ex minim do reprehenderit ut aute. In commodo do consectetur qui occaecat cupidatat sint ullamco dolor tempor ullamco elit.',
-    icon: faLaravel
-  }
+ 
+  
+ 
+
 
 ]);
   return (
@@ -46,7 +53,7 @@ const [listSkills] = useState([
        </div>
        <div className="des" ref={(el) => el && divs.current.push(el)}>
         {/* 20 */}
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam perspiciatis quae veniam amet nesciunt voluptatibus quis consectetur consequatur quisquam harum.
+        I am a passionate web developer with a strong foundation in both frontend and backend technologies. Here are the skills I've acquired throughout my journey...
        </div>
        <div className="list">
         {
